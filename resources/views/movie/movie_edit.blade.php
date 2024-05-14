@@ -23,15 +23,15 @@
                 @csrf
                 @method('PUT')
                 <div class="form-group">
-                    <label for="title">Title</label>
+                    <label for="title" class="mb-3">Title</label>
                     <input type="text" class="form-control" id="title" name="title" value="{{ $movie->title }}" required>
                 </div>
                 <div class="form-group">
-                    <label for="director">Director</label>
+                    <label for="director" class="mb-3">Director</label>
                     <input type="text" class="form-control" id="director" name="director" value="{{ $movie->director }}" required>
                 </div>
                 <div class="form-group">
-                    <label for="description">Description</label>
+                    <label for="description" class="mb-3">Description</label>
                     <textarea class="form-control" id="description" name="description" rows="3" required>{{ $movie->description }}</textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block mt-3">Update Movie</button>
